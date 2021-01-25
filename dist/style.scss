@@ -45,7 +45,7 @@ body {
     }
 
     .banner-area {
-        background-image: url(/imges/home.png);
+        background-image: url(/images/home.png);
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
@@ -112,8 +112,9 @@ body {
                
             }
             .card {
+                
                 width: 300px;
-                height: 250px;
+                height: 310px;
                 background:grey;
                 display: flex;
                 flex-direction: column;
@@ -123,17 +124,31 @@ body {
                 transition: 1s;
                 
                 
-                .image {
+                img{
                     width: 300px;
                     height: 170px;
-                    background: crimson;
+                    // background: crimson;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
                 }
                 .card-body {
                     padding: 10px;
-                    .header-text {padding: 5px;}
-                    .price-text {padding: 5px; color: rgb(209, 204, 204)}
+                    .header-text {padding: 5px; color: white; font-size: 1.1em;}
+                    .price-text {padding: 5px; color: rgb(209, 204, 204); font-weight: bold; font-size:1em;}
+                    button {
+                        margin-left: 30px;
+                        padding: 10px;
+                        border-radius: 15px;
+                        border: none;
+                        background-color: rgb(0, 0, 0);
+                        color: white;
+                        font-size: 1em;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        background: white;
+                        color: black;
+                    }
                 }
 
             }
@@ -160,10 +175,11 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+             
             .image {
                 width: 300px;
                 height: 200px;
-                background:crimson;
+                // background:crimson;
                 margin: 5px;
                 display: flex;
                 justify-content: center;
@@ -180,10 +196,11 @@ body {
                  
                 span{
                     visibility: visible;
-                    background:gray;
+                    background:black;
                     padding: 10px;
                     border-radius: 20px;
-                    
+                    border: 1px solid white;
+                    color: white;
                     cursor: pointer;
                 }
             }
