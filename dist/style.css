@@ -17,6 +17,16 @@ body header {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  body header {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body header a {
   color: white;
 }
@@ -70,6 +80,15 @@ body .banner-area h3 {
   padding: 5px;
 }
 
+@media screen and (max-width: 480px) {
+  body .banner-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body .banner-area button {
   background-color: black;
   color: white;
@@ -93,7 +112,6 @@ body .banner-area button:hover {
 
 body .services-area {
   width: 100%;
-  height: 50vh;
   background-color: #f5f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,14 +120,23 @@ body .services-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  body .services-area {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
 }
 
 body .services-area h3.header-text {
@@ -127,6 +154,17 @@ body .services-area .products-area {
           flex-direction: row;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  body .services-area .products-area {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body .services-area .products-area .card {
@@ -173,5 +211,78 @@ body .services-area .products-area .card .card-body .price-text {
 body .services-area .products-area .card:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+
+body .gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  body .gallery {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+}
+
+body .gallery .gallery-content {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .gallery .gallery-content .image {
+  width: 300px;
+  height: 200px;
+  background: crimson;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gallery .gallery-content .image span {
+  visibility: hidden;
+}
+
+body .gallery .gallery-content .image:hover {
+  opacity: 60%;
+}
+
+body .gallery .gallery-content .image:hover span {
+  visibility: visible;
+  background: gray;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

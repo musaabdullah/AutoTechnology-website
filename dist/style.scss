@@ -13,14 +13,21 @@ body {
         background: black;
         justify-content: space-around;
         align-items: center;
-        
+        @media screen and (max-width:480px){
+            padding: 20px;
+            flex-direction: column;
+        }
         a {
             color: white;
         }
+
       nav {
         padding: 20px;
         display: flex;
         align-items: center;
+        @media screen and (max-width:480px){
+            // flex-direction: column;
+        }
          li {
              list-style: none;
              a {
@@ -49,6 +56,9 @@ body {
         justify-content: center;
         h1 {padding: 10px;}
         h3 {padding: 5px;}
+        @media screen and (max-width:480px){
+            flex-direction: column;
+        }
         button{
             background-color: rgb(0, 0, 0);
             color: white;
@@ -70,14 +80,20 @@ body {
     }
     .services-area {
         width: 100%;
-        height: 50vh;
+       
         background-color: rgb(245, 241, 241);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         margin-top: 50px;
         padding-top: 10px;
+        @media screen and (max-width:480px){
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
         h3.header-text {
             font-size: 2.2em;
             color: gray
@@ -87,6 +103,14 @@ body {
             flex-direction: row;
             padding: 10px;
             margin-top: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            @media screen and (max-width:480px){
+                // flex-direction: column;
+                justify-content: center;
+                 
+               
+            }
             .card {
                 width: 300px;
                 height: 250px;
@@ -118,6 +142,52 @@ body {
             }
         }
  
+    }
+    .gallery {
+        width: 100%;
+        display: flex;
+        padding-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width:480px){
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .gallery-content{
+            padding-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .image {
+                width: 300px;
+                height: 200px;
+                background:crimson;
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 span{
+                  visibility: hidden;   
+                 }
+                 transition: 1s;
+                 
+            }
+            .image:hover {
+                 
+                opacity: 60%;
+                 
+                span{
+                    visibility: visible;
+                    background:gray;
+                    padding: 10px;
+                    border-radius: 20px;
+                    
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
 }
