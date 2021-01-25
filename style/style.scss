@@ -19,9 +19,7 @@ body {
             padding: 20px;
             flex-direction: column;
         }
-        @media screen and (min-width:480px){
-            position: fixed;
-        }
+        
         a {
             color: white;
         }
@@ -190,6 +188,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // object-fit: cover;
                  span{
                   visibility: hidden;   
                  }

@@ -32,12 +32,6 @@ body header {
   }
 }
 
-@media screen and (min-width: 480px) {
-  body header {
-    position: fixed;
-  }
-}
-
 body header a {
   color: white;
 }
