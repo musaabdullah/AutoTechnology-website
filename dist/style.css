@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #e4e3e3;
+}
+
 body header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,5 +380,13 @@ body .contact form button {
 
 body .contact form button:hover {
   background: #ff9f04;
+}
+
+body .footer {
+  background: black;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */
